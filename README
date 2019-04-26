@@ -1,9 +1,30 @@
-  _______                     ________        __
- |       |.-----.-----.-----.|  |  |  |.----.|  |_
- |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
- |_______||   __|_____|__|__||________||__|  |____|
-          |__| W I R E L E S S   F R E E D O M
- -----------------------------------------------------
+This repo is a patched OpenWrt current upstream source code for mactoy.com
+MagicBox-ac750 mini router (16M flash version).
+
+Compared with the offical source code, this repo applies some patches for the
+MagicBox-ac750 mini router. This patch mainly adds a new device for this router
+and add a patch to ath10k wireless driver for reading the ART data.
+
+In addition, some useful software from openwrt-dist has been added to /package.
+Including openwrt-chinadns, openwrt-dns-forwarder, openwrt-shadowvpn,
+openwrt-redsocks2 and openwrt-dist-luci for their luci interface.
+
+To compile the firmware, select Target System (Atheros AR7xxx/AR9xxx), and
+Target Profile (Mactoy MagicBox AC750). Or you load my personal use config
+file: /dot_config_personal, which the images in releases uses it.
+
+
+ -------------------------------------------------------------
+   _____                         __      __         __      
+  /\  __`\                      /\ \  __/\ \       /\ \__   
+  \ \ \/\ \  _____     __    ___\ \ \/\ \ \ \  _ __\ \ ,_\  
+   \ \ \ \ \/\ '__`\ /'__`\/' _ `\ \ \ \ \ \ \/\`'__\ \ \/  
+    \ \ \_\ \ \ \L\ /\  __//\ \/\ \ \ \_/ \_\ \ \ \/ \ \ \_ 
+     \ \_____\ \ ,__\ \____\ \_\ \_\ `\___x___/\ \_\  \ \__\
+      \/_____/\ \ \/ \/____/\/_/\/_/'\/__//__/  \/_/   \/__/
+               \ \_\                                        
+                \/_/          W I R E L E S S   F R E E D O M
+ -------------------------------------------------------------
 
 This is the buildsystem for the OpenWrt Linux distribution.
 
